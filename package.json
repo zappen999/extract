@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zappen999/extract/issues"
   },
-  "homepage": "https://github.com/zappen999/extract#readme"
+  "homepage": "https://github.com/zappen999/extract#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }

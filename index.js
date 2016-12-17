@@ -21,6 +21,11 @@ function floats(string, first = 0, limit = 0) {
   });
 }
 
+/**
+ * Finds the first hashtag in a string
+ * @param  {String} string String to extract from
+ * @return {String}        Hashtag string on success, false if not found
+ */
 function hashtag(string) {
   const matches = string.match(hashtagRegex);
 
@@ -85,22 +90,10 @@ function betweenAll(string, from, to) {
   }
 }
 
-function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function toTitleCase(str) {
-  return str.replace(/\w\S*/g, function(txt) {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  });
-}
-
 module.exports = {
   float,
   floats,
   between,
   betweenAll,
-  capitalize,
-  toTitleCase,
   hashtag
 };

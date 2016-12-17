@@ -1,6 +1,6 @@
 'use strict';
 const expect = require('chai').expect;
-const extract = require('./extract');
+const extract = require('../index');
 
 describe('Extract', function() {
   describe('Float', function() {
